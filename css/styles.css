@@ -1,0 +1,137 @@
+/* color platte
+#f3f2ef -- linkedIn Background Silver
+#4285F4 -- Google Blue
+#DB4437 -- Google Red
+#F4B400 -- Google Yellow
+#0F9D58 -- Google Green
+*/
+
+html{
+  background-color: #f3f2ef;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, 
+                Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, 
+                Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, 
+                Lucida Grande, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: auto;
+  max-width: 782px;
+}
+
+a:link {
+  color: #4285F4;
+  text-decoration: none;
+}
+
+/* header */
+header {
+  background-color: white;
+  border-radius: 8px;
+	box-shadow: 1px  1px 0 rgba(0,0,0,0.08);
+  margin: 16px 0;
+  max-width: 782px;
+  padding: 0;
+}
+
+header div {
+  padding: 12px 24px;
+}
+
+header img{
+  border-radius: 8px 8px 0 0;
+  width: 782px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header ul {
+  padding-inline-start: 0;
+}
+
+header li {
+  display: inline;
+}
+
+.navigation li:after {
+  content: "/";
+}
+
+.contact svg {
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+}
+
+
+/* article */
+article {
+  background-color: white;
+  border-radius: 8px;
+	box-shadow: 1px  1px 0 rgba(0,0,0,0.08);
+  margin: 16px 0;
+  max-width: 734px;
+  padding: 24px;
+  }
+
+article h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+article h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+article h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section {
+  border-bottom:2px solid #f3f2ef;
+}
+
+article section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article section li::before {
+  content: "- ";
+}
+
+.images {
+  column-count: auto;
+}
+
+.images img {
+  border-radius: 8px;
+  margin: 0 12px 12px 0;
+  width: 350px;
+  border: 1px solid #f3f2ef;
+}
+
+.images img:hover {
+  border: 1px solid #4285F4;
+}
+
+/* responsive */
+@media screen and (max-width:782px) {
+  .images img {
+    width: 272px;
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 20px;
+}
+
