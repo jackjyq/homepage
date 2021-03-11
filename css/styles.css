@@ -8,6 +8,7 @@
 
 html{
   background-color: #f3f2ef;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +21,21 @@ body {
   max-width: 782px;
 }
 
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 a:link {
   color: #4285F4;
   text-decoration: none;
@@ -28,19 +44,20 @@ a:link {
 /* header */
 header {
   background-color: white;
-  border-radius: 8px;
-	box-shadow: 1px  1px 0 rgba(0,0,0,0.08);
-  margin: 16px 0;
+  border-radius: 0 0 8px 8px;
+	box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+  margin: 0 0 16px 0;
   max-width: 782px;
   padding: 0;
 }
+
+
 
 header div {
   padding: 12px 24px;
 }
 
 header img{
-  border-radius: 8px 8px 0 0;
   width: 100%;
 }
 
@@ -76,21 +93,6 @@ article {
   max-width: 734px;
   padding: 24px;
   }
-
-article h1 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-article h2 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-article h3 {
-  font-size: 16px;
-  font-weight: 600;
-}
 
 section {
   border-bottom:2px solid #f3f2ef;
