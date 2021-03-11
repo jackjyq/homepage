@@ -12,12 +12,26 @@
     <!-- load JavaScript and CSS files -->
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144741828-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-144741828-1');
+    </script>
   </head>
   <body>
     <main>
       <!-- Header -->
       <header class="card">
-        <img src="./images/profile-bg.jpg" alt="profile background">
+        <img srcset="./images/profile-bg-800x200.jpg 800w,
+            ./images/profile-bg-500x200.jpg 500w"
+            sizes="(max-width: 500px) 500px,
+            800px"
+            src="./images/profile-bg-800x200.jpg"
+            alt="profile background">
         <div>
         <h1>Yiqun <q>Jack</q> Jiang</h1>
         <ul class="navigation">
