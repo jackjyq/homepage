@@ -118,7 +118,7 @@ article section li::before {
   border: 1px solid #f3f2ef;
 }
 
-.images img:hover {
+.images a img:hover {
   border: 1px solid #4285F4;
 }
 
@@ -126,6 +126,12 @@ article section li::before {
 @media screen and (max-width:782px) {
   .images img {
     width: 272px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .images img {
+    width: 100%;
   }
 }
 
