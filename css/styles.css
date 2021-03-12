@@ -51,8 +51,6 @@ header {
   padding: 0;
 }
 
-
-
 header div {
   padding: 12px 24px;
 }
@@ -80,9 +78,13 @@ header li {
 .contact svg {
   width: 25px;
   height: 25px;
-  margin: 3px;
+  padding: 3px;
 }
 
+.contact svg:hover {
+  width: 30px;
+  height: 30px;
+}
 
 /* article */
 article {
