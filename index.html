@@ -21,6 +21,9 @@
     <link rel="manifest" href="./images/favicons/site.webmanifest">
     <link rel="icon" type="image/png" sizes="32x32"
       href="./images/favicons/favicon-32x32.png">
+    <!-- load JavaScript and CSS files -->
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144741828-1">
     </script>
@@ -30,14 +33,34 @@
       gtag('js', new Date());
       gtag('config', 'UA-144741828-1');
     </script>
-    <!-- language redirect -->
-    <script>
-      let language = navigator.language;
-      if (language.indexOf("zh") > -1) {
-        window.location.href = "./zh-CN.html";
-      } else {
-        window.location.href = "./en-AU.html";
-      }
-    </script>
   </head>
+  <body>
+    <!-- main -->
+    <main>
+      <!-- language redirect -->
+      <script>
+        let language = navigator.language;
+        if (language.indexOf("zh") > -1) {
+          window.location.href = "./zh-CN.html";
+        } else {
+          window.location.href = "./en-AU.html";
+        }
+      </script>
+      <noscript>
+        <article>
+          <h1>Yiqun <q>Jack</q> Jiang</h1>
+          <section>
+            <p>Your browser does not support Javascript, please selector your language</p>
+            <p>你的浏览器不支持 Javascript, 你手动选择你的语言</p>
+            <p><a href="./zh-CN.html">简体中文</a> | 
+              <a href="./en-AU.html">English</a></p>
+          </section>
+        </article>
+      </noscript>
+    </main>
+    <!-- footer -->
+    <footer>
+      Copyright &copy; 2021 Yiqun <q>Jack</q> Jiang. All rights reserved.
+    </footer>
+  </body>
 </html>
