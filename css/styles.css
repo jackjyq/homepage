@@ -12,12 +12,9 @@ html{
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, 
-                Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, 
-                Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, 
-                Lucida Grande, Helvetica, Arial,
-                "Microsoft YaHei", "微软雅黑", Heiti, "黑体"，
-                sans-serif;
+  font-family: Helvetica, Tahoma, Arial,
+      "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Heiti, "黑体",
+      sans-serif;
   font-size: 16px;
   margin: auto;
   max-width: 782px;
