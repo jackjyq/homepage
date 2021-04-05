@@ -81,7 +81,7 @@ header li {
 }
 
 .navigation li:after {
-  content: "/";
+  content: " / ";
 }
 
 .contact svg {
