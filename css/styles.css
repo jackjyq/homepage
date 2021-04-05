@@ -58,11 +58,13 @@ header {
   padding: 0;
 }
 
-header div {
-  padding: 12px 24px;
+.header-avatar {
+  width: 192px;
+  height: 192px;
+  margin: 0 24px 24px 0;
 }
 
-header img{
+.header-background {
   width: 100%;
 }
 
@@ -91,6 +93,19 @@ header li {
 .contact svg:hover {
   width: 30px;
   height: 30px;
+}
+
+/* responsive */
+.header-container {
+  padding: 12px 24px;
+  display: flex
+}
+
+@media screen and (max-width:455px) {
+  .header-container {
+    padding: 12px 24px;
+    display: block;
+  }
 }
 
 /* article */
