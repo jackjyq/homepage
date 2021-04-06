@@ -62,7 +62,9 @@ header {
 }
 
 .header-background {
-  width: 100%;
+  background-image: url("../images/header/profile-bg-800x200.jpg");
+  background-position: center;
+  height: 200px;
 }
 
 header h1 {
