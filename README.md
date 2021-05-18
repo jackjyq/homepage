@@ -1,4 +1,4 @@
-# [jackjyq.com](https://www.jackjyq.com)
+# [Jack's Interests](https://www.jackjyq.com)
 
 A simple personal homepage, build with bare bone HTML, CSS and JavaScript.
 
