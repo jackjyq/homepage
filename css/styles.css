@@ -1,64 +1,114 @@
+@import url("reset.css");
 /* color platte
-#f3f2ef -- linkedIn Background Silver
-#4285F4 -- Google Blue
-#DB4437 -- Google Red
-#F4B400 -- Google Yellow
-#0F9D58 -- Google Green
+--primary: LinkedIn Link Blue
+--backgroud: linkedIn Background Silver
+--surface:white
+--on-surface: black;
+--on-background: Footer grey;
 */
 
+:root {
+  --primary: #4285F4;
+  --backgroud: #f3f2ef; 
+  --surface:white;
+  --on-surface: black;
+  --on-background: #808080;
+}
+
 html{
-  background-color: #f3f2ef;
+  background-color: var(--backgroud);
   scroll-behavior: smooth;
 }
 
+/* fant-family comes form jianshu.com */
 body {
-  font-family: Helvetica, Tahoma, Arial,
-      "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", Heiti, "黑体",
-      sans-serif;
-  font-size: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,
+    Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
   margin: auto;
   max-width: 782px;
+  line-height: 2;
+}
+
+/* article */
+article {
+  background-color: var(--surface);
+  border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+  max-width: auto;
+  padding: 24px;
+  }
+
+section:not(:last-child) {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom:2px solid #f3f2ef;
+}
+
+/* text format */
+h1, h2, h3 {
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 h3 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1rem;
 }
 
 a:link {
-  color: #4285F4;
+  color: var(--primary);
   text-decoration: none;
 }
 
+/* table */
+tr {
+  line-height: 1.5;
+}
 th {
   text-align: right;
 }
 
-
-/* header */
-header {
-  background-color: white;
-  border-radius: 0 0 8px 8px;
-	box-shadow: 1px 1px 0 rgba(0,0,0,0.08);
-  margin: 0 0 16px 0;
-  max-width: 782px;
-  padding: 0;
+/* list */
+ul {
+  list-style-type: none;
 }
 
-.header-avatar {
-  width: 192px;
-  height: 192px;
-  margin: 0 24px 24px 0;
+li::before {
+  content: "- ";
+}
+
+li {
+  line-height: 1.5;
+}
+
+
+/* image */
+img {
+  border-radius: 8px;
+  max-width: 350px;
+  width: 100%;
+}
+
+img:hover {
+	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+
+/* overwrite styles */
+/* header */
+header {
+  background-color: var(--surface);
+  border-radius: 0 0 8px 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+  max-width: auto;
 }
 
 .header-background {
@@ -67,102 +117,61 @@ header {
   height: 200px;
 }
 
-header h1 {
-  margin-top: 0;
+.header-container {
+  padding: 24px;
+  display: flex;
+  gap: 24px;
 }
 
-header ul {
-  padding-inline-start: 0;
+.header-avatar {
+  width: 192px;
+  height: 192px;
 }
 
-header li {
+.contact ul,
+.navigation ul {
+  list-style-type: none;
+}
+
+.contact li::before,
+.navigation li::before {
+  content: none;
+}
+
+.contact li,
+.navigation li {
   display: inline;
 }
 
-.navigation li:after {
+.navigation li:not(:last-child)::after {
   content: " / ";
 }
 
+
 .contact svg {
-  width: 25px;
-  height: 25px;
-  padding: 3px;
+  width: 24px;
+  height: 24px;
+  margin: 8px;
 }
 
 .contact svg:hover {
-  width: 30px;
-  height: 30px;
-}
-
-/* responsive */
-.header-container {
-  padding: 12px 24px;
-  display: flex
-}
-
-@media screen and (max-width:455px) {
-  .header-container {
-    padding: 12px 24px;
-    display: block;
-  }
-}
-
-/* article */
-article {
-  background-color: white;
-  border-radius: 8px;
-	box-shadow: 1px  1px 0 rgba(0,0,0,0.08);
-  margin: 16px 0;
-  max-width: 734px;
-  padding: 24px;
-  }
-
-section {
-  border-bottom:2px solid #f3f2ef;
-}
-
-article section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article section li::before {
-  content: "- ";
-}
-
-.images {
-  column-count: auto;
-}
-
-.images img {
-  border-radius: 8px;
-  margin: 0 12px 12px 0;
-  width: 350px;
-  border: 1px solid #f3f2ef;
-}
-
-.images a img:hover {
-  border: 1px solid #4285F4;
-}
-
-/* responsive */
-@media screen and (max-width:782px) {
-  .images img {
-    width: 272px;
-  }
-}
-
-@media screen and (max-width:350px) {
-  .images img {
-    width: 100%;
-  }
+	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 /* footer */
 footer {
   text-align: center;
-  font-size: 12px;
-  color: grey;
+  font-size: 0.75rem;
+  color: var(--on-background);
   margin-bottom: 20px;
 }
 
+/* responsive 
+  desktop first responsive design
+  i.e the default layout is for witdth greater than 782px
+*/
+@media screen and (max-width:600px) {
+  .header-container {
+    flex-direction: column;
+  }
+}
