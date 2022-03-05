@@ -8,22 +8,23 @@
 */
 
 :root {
-  --primary: #4285F4;
-  --backgroud: #f3f2ef; 
-  --surface:white;
+  --primary: #4285f4;
+  --backgroud: #f3f2ef;
+  --surface: white;
   --on-surface: black;
   --on-background: #808080;
 }
 
-html{
+html {
   background-color: var(--backgroud);
   scroll-behavior: smooth;
 }
 
 /* fant-family comes form jianshu.com */
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,
-    Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
+    Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+    sans-serif;
   margin: auto;
   max-width: 782px;
   line-height: 2;
@@ -33,20 +34,22 @@ body {
 article {
   background-color: var(--surface);
   border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   margin-bottom: 16px;
   max-width: auto;
   padding: 24px;
-  }
+}
 
 section:not(:last-child) {
   padding-bottom: 8px;
   margin-bottom: 8px;
-  border-bottom:2px solid #f3f2ef;
+  border-bottom: 2px solid #f3f2ef;
 }
 
 /* text format */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 
@@ -88,7 +91,6 @@ li {
   line-height: 1.5;
 }
 
-
 /* image */
 img {
   border-radius: 8px;
@@ -97,16 +99,15 @@ img {
 }
 
 img:hover {
-	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
-
 
 /* overwrite styles */
 /* header */
 header {
   background-color: var(--surface);
   border-radius: 0 0 8px 8px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   margin-bottom: 16px;
   max-width: auto;
 }
@@ -147,7 +148,6 @@ header {
   content: " / ";
 }
 
-
 .contact svg {
   width: 24px;
   height: 24px;
@@ -155,7 +155,7 @@ header {
 }
 
 .contact svg:hover {
-	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* footer */
@@ -170,7 +170,7 @@ footer {
   desktop first responsive design
   i.e the default layout is for witdth greater than 782px
 */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .header-container {
     flex-direction: column;
   }

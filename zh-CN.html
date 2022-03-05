@@ -1,472 +1,785 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="朴素的个人主页，基于最基础的 HTML, CSS 和 JavaScript 开发。"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, 个人主页" />
+    <title>Jack | Personal Homepage</title>
+    <!-- https://ogp.me/ -->
+    <meta property="og:title" content="Jack | Personal Homepage" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="朴素的个人主页，基于最基础的 HTML, CSS 和 JavaScript 开发。"
+    />
+    <meta property="og:url" content="https://www.jackjyq.com/" />
+    <meta
+      property="og:image"
+      content="./images/header/profile-bg-800x200.jpg"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="200" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <!-- load JavaScript and CSS files -->
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-144741828-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-144741828-1");
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="朴素的个人主页，基于最基础的 HTML, CSS 和 JavaScript 开发。">
-  <meta name="keywords" content="HTML, CSS, JavaScript, 个人主页">
-  <title>Jack | Personal Homepage</title>
-  <!-- https://ogp.me/ -->
-  <meta property="og:title" content="Jack | Personal Homepage" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="朴素的个人主页，基于最基础的 HTML, CSS 和 JavaScript 开发。">
-  <meta property="og:url" content="https://www.jackjyq.com/" />
-  <meta property="og:image" content="./images/header/profile-bg-800x200.jpg" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="800" />
-  <meta property="og:image:height" content="200" />
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicons/site.webmanifest">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
-  <!-- load JavaScript and CSS files -->
-  <script src="js/script.js" defer></script>
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144741828-1">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-144741828-1');
-  </script>
-</head>
-
-<body>
-  <main>
-    <header>
-      <div class="header-background"></div>
-      <div class="header-container">
-        <img class="header-avatar" src="./images/favicons/android-chrome-192x192.png">
-        <div>
-          <h1>姜译群<q>Jack</q></h1>
-          <section>
-            <h2>兴趣：</h2>
-            <ul class="navigation">
-              <li><a href="#information-technology">信息技术</a></li>
-              <li><a href="#electronic-enginnering">电子工程</a></li>
-              <li><a href="#math-and-logic">数学与逻辑</a></li>
-              <li><a href="#health">健康</a></li>
-              <li><a href="#domestic-cat">家猫</a></li>
-              <li><a href="#business">经管</a></li>
-              <li><a href="#natural-sciences">自然科学</a></li>
-              <li><a href="#social-sciences">社会科学</a></li>
-            </ul>
-          </section>
-          <section>
-            <ul class="contact">
-              <!-- svg comes from
+  <body>
+    <main>
+      <header>
+        <div class="header-background"></div>
+        <div class="header-container">
+          <img
+            class="header-avatar"
+            src="./images/favicons/android-chrome-192x192.png"
+          />
+          <div>
+            <h1>姜译群<q>Jack</q></h1>
+            <section>
+              <h2>兴趣：</h2>
+              <ul class="navigation">
+                <li><a href="#information-technology">信息技术</a></li>
+                <li><a href="#electronic-enginnering">电子工程</a></li>
+                <li><a href="#math-and-logic">数学与逻辑</a></li>
+                <li><a href="#health">健康</a></li>
+                <li><a href="#domestic-cat">家猫</a></li>
+                <li><a href="#business">经管</a></li>
+                <li><a href="#natural-sciences">自然科学</a></li>
+                <li><a href="#social-sciences">社会科学</a></li>
+              </ul>
+            </section>
+            <section>
+              <ul class="contact">
+                <!-- svg comes from
                   https://simpleicons.org/ -->
-              <li><a href="https://www.linkedin.com/in/jackjyq/">
-                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#0A66C2">
-                    <title>LinkedIn</title>
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </a></li>
-              <li><a href="https://github.com/jackjyq">
-                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#181717">
-                    <title>GitHub</title>
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                  </svg>
-                </a></li>
-              <li><a href="https://book.douban.com/people/diqiuyi/">
-                  <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007722">
-                    <title lang="zh-cn">豆瓣读书</title>
-                    <path
-                      d="M.643.92v2.412h22.714V.92H.643zm1.974 4.926v9.42h18.764v-9.42H2.617zm2.72 2.408H18.69v4.605H5.338V8.254zm1.657 7.412l-2.512.938c1.037 1.461 1.87 2.825 2.512 4.091H0v2.385h24v-2.385h-6.678c.818-1.176 1.589-2.543 2.303-4.091l-2.73-.938a29.952 29.952 0 01-2.479 5.03h-4.75c-.786-1.962-1.677-3.641-2.672-5.03Z" />
-                  </svg>
-                </a></li>
-              <li><a href="mailto:me@jackjyq.com">
-                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#EA4335">
-                    <title>Email</title>
-                    <path
-                      d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-                  </svg>
-                </a></li>
-            </ul>
-          </section>
+                <li>
+                  <a href="https://www.linkedin.com/in/jackjyq/">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#0A66C2"
+                    >
+                      <title>LinkedIn</title>
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/jackjyq">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#181717"
+                    >
+                      <title>GitHub</title>
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://book.douban.com/people/diqiuyi/">
+                    <svg
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#007722"
+                    >
+                      <title lang="zh-cn">豆瓣读书</title>
+                      <path
+                        d="M.643.92v2.412h22.714V.92H.643zm1.974 4.926v9.42h18.764v-9.42H2.617zm2.72 2.408H18.69v4.605H5.338V8.254zm1.657 7.412l-2.512.938c1.037 1.461 1.87 2.825 2.512 4.091H0v2.385h24v-2.385h-6.678c.818-1.176 1.589-2.543 2.303-4.091l-2.73-.938a29.952 29.952 0 01-2.479 5.03h-4.75c-.786-1.962-1.677-3.641-2.672-5.03Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:me@jackjyq.com">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#EA4335"
+                    >
+                      <title>Email</title>
+                      <path
+                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
-      </div> <!-- header container -->
-    </header>
+        <!-- header container -->
+      </header>
 
-    <!-- information technology -->
-    <article id="information-technology">
-      <h1>信息技术</h1>
-      <!-- <section>
+      <!-- information technology -->
+      <article id="information-technology">
+        <h1>信息技术</h1>
+        <!-- <section>
           <h2>信息技术硕士 卓越学位</h2>
           <p>新南威尔士大学, 澳大利亚</p>
           <p>查看更多<a href="https://jackjyq.github.io/portfolio/">
             学校项目</a></p>
         </section> -->
-      <section lang="zh-cn">
-        <h2><a href="https://zuowen.jackjyq.com">小嘿作文生成器</a></h2>
-        <p>小嘿作文生成器，可根据输入的主题谓语、主题宾语，自动随机生成海量作文。适用于中学考试议论文的学习与研究。</p>
-        <a href="https://zuowen.jackjyq.com">
-          <img src="images/xiaohei-zuowen.jpg">
-        </a>
-      </section>
-      <section>
-        <h2><a href="https://addons.mozilla.org/en-US/firefox/user/13822940/">
-            Firefox 主题与插件</a></h2>
-        <p>一些 Firefox 的主题与插件, 我最喜欢的是
-          <a href="https://addons.mozilla.org/en-US/firefox/addon/clock-dynamic-theme/">
-            Clock Dynamic Theme</a>.
-        </p>
-      </section>
-      <section>
-        <h2>资格认证</h2>
-        <ul>
-          <li>Bootstrap 4 Essential Training, Lynda</li>
-          <li>CSS Essential Training, LinkedIn Learning</li>
-          <li>Git Essential Training, LinkedIn Learning</li>
-          <li><a href="https://analytics.google.com/analytics/academy/certificate/4dOMNZp6Q1OWfG5DAVbX3w">
-              Google Analytics for Beginners</a>, Google</li>
-          <li>HTML Essential Training, LinkedIn Learning</li>
-          <li>JavaScript Essential Training, LinkedIn Learning</li>
-          <li>JavaScript: Async, LinkedIn Learning</li>
-          <li>Learning Chrome Web Developer Tools, LinkedIn Learning</li>
-          <li>Learning NGINX, LinkedIn Learning</li>
-          <li>Learning Ubuntu Server, LinkedIn Learning</li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/JPXSKZWFWZWK">
-              Python Data Structure</a>, University of Michigan</li>
-          <li>SQL Essential Training, Lynda</li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/BKGQAZC6VWFG">
-              Troubleshooting and Debugging Techniques</a>, Google</li>
-          <li>Windows 10: Troubleshooting for IT Support, LinkedIn Learning</li>
-          <li>Windows 10: Advanced Troubleshooting for IT Support, LinkedIn Learning</li>
-        </ul>
-      </section>
-      <section>
-        <h2>阅读列表</h2>
-        <ul>
-          <li><a href="https://book.douban.com/subject/1108725/" lang="zh-cn">
-              人件</a>, Tom DeMarco</li>
-          <li><a href="https://book.douban.com/subject/1102259/" lang="zh-cn">
-              人月神话</a>, 弗雷德里克·布鲁克斯</li>
-        </ul>
-      </section>
-    </article>
+        <section lang="zh-cn">
+          <h2><a href="https://zuowen.jackjyq.com">小嘿作文生成器</a></h2>
+          <p>
+            小嘿作文生成器，可根据输入的主题谓语、主题宾语，自动随机生成海量作文。适用于中学考试议论文的学习与研究。
+          </p>
+          <a href="https://zuowen.jackjyq.com">
+            <img src="images/xiaohei-zuowen.jpg" />
+          </a>
+        </section>
+        <section>
+          <h2>
+            <a href="https://addons.mozilla.org/en-US/firefox/user/13822940/">
+              Firefox 主题与插件</a
+            >
+          </h2>
+          <p>
+            一些 Firefox 的主题与插件, 我最喜欢的是
+            <a
+              href="https://addons.mozilla.org/en-US/firefox/addon/clock-dynamic-theme/"
+            >
+              Clock Dynamic Theme</a
+            >.
+          </p>
+        </section>
+        <section>
+          <h2>资格认证</h2>
+          <ul>
+            <li>Bootstrap 4 Essential Training, Lynda</li>
+            <li>CSS Essential Training, LinkedIn Learning</li>
+            <li>Git Essential Training, LinkedIn Learning</li>
+            <li>
+              <a
+                href="https://analytics.google.com/analytics/academy/certificate/4dOMNZp6Q1OWfG5DAVbX3w"
+              >
+                Google Analytics for Beginners</a
+              >, Google
+            </li>
+            <li>HTML Essential Training, LinkedIn Learning</li>
+            <li>JavaScript Essential Training, LinkedIn Learning</li>
+            <li>JavaScript: Async, LinkedIn Learning</li>
+            <li>Learning Chrome Web Developer Tools, LinkedIn Learning</li>
+            <li>Learning NGINX, LinkedIn Learning</li>
+            <li>Learning Ubuntu Server, LinkedIn Learning</li>
+            <li>
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/JPXSKZWFWZWK"
+              >
+                Python Data Structure</a
+              >, University of Michigan
+            </li>
+            <li>SQL Essential Training, Lynda</li>
+            <li>
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/BKGQAZC6VWFG"
+              >
+                Troubleshooting and Debugging Techniques</a
+              >, Google
+            </li>
+            <li>
+              Windows 10: Troubleshooting for IT Support, LinkedIn Learning
+            </li>
+            <li>
+              Windows 10: Advanced Troubleshooting for IT Support, LinkedIn
+              Learning
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>阅读列表</h2>
+          <ul>
+            <li>
+              <a href="https://book.douban.com/subject/1108725/" lang="zh-cn">
+                人件</a
+              >, Tom DeMarco
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1102259/" lang="zh-cn">
+                人月神话</a
+              >, 弗雷德里克·布鲁克斯
+            </li>
+          </ul>
+        </section>
+      </article>
 
-    <!-- electronic enginnering -->
-    <article id="electronic-enginnering">
-      <h1>电子工程</h1>
-      <!-- <section>
+      <!-- electronic enginnering -->
+      <article id="electronic-enginnering">
+        <h1>电子工程</h1>
+        <!-- <section>
           <h2>电子科学与技术学士</h2>
           <p>西南交通大学, 中国</p>
         </section> -->
-      <section>
-        <h2><a href="https://getswitchpal.com/">SwitchPal</a></h2>
-        <p>旧式空调的智能开关, 可自己调节室内温度。 安装简便，支持手机控制。</p>
-      </section>
-      <section>
-        <h2>阅读列表</h2>
-        <ul>
-          <li><a href="https://book.douban.com/subject/1926610/">
-              Foundations of Analog and Digital Electronic Circuits</a>
-            , Anant Agarwal</li>
-        </ul>
-        <h2>公开课 (旁听)</h2>
-        <ul>
-          <li><a href="http://v.163.com/special/opencourse/circuits.html">
-              电路和电子学</a>，麻省理工学院</li>
-        </ul>
-      </section>
-    </article>
-
-    <!-- Math and Logic -->
-    <article id="math-and-logic">
-      <h1>数学与逻辑</h1>
-      <section>
-        <h2>资格认证</h2>
-        <a href="https://www.complexityexplorer.org/courses/104-introduction-to-complexity/certificates/868286466">
-          <img src="./images/images-350w/introduction-to-complexity.jpg"></a>
-      </section>
-      <section>
-        <h2>阅读列表</h2>
-        <ul>
-          <li><a href="https://book.douban.com/subject/7946089/">
-              Introduction to Logic</a>, Irving M. Copi Late</li>
-          <li><a href="https://book.douban.com/subject/25763679/" lang="zh-cn">
-              不确定世界的理性选择</a>, 雷德·海斯蒂</li>
-          <li><a href="https://book.douban.com/subject/1500045/" lang="zh-cn">
-              猜想与反驳</a>, 卡尔·波普尔</li>
-          <li><a href="https://book.douban.com/subject/10732575/" lang="zh-cn">
-              概率的哲学理论</a>, 吉利斯</li>
-          <li><a href="https://book.douban.com/subject/1599035/" lang="zh-cn">
-              简捷启发式</a>, 哥德·吉戈伦尔</li>
-          <li><a href="https://book.douban.com/subject/3349509/" lang="zh-cn">
-              科学发现的逻辑</a>, 卡尔·波普尔</li>
-          <li><a href="https://book.douban.com/subject/5399343/" lang="zh-cn">
-              论证是一门学问</a>, 安东尼 韦斯顿</li>
-          <li><a href="https://book.douban.com/subject/1484425/" lang="zh-cn">
-              囚徒的困境</a>, 威廉·庞德斯通</li>
-          <li><a href="https://book.douban.com/subject/1001737/" lang="zh-cn">
-              失败的逻辑</a>, 迪特里希.德尔纳</li>
-          <li><a href="https://book.douban.com/subject/1049136/" lang="zh-cn">
-              数学：确定性的丧失</a>, M·克莱因</li>
-          <li><a href="https://book.douban.com/subject/10750155/" lang="zh-cn">
-              数学之美</a>, 吴军</li>
-          <li><a href="https://book.douban.com/subject/1400030/" lang="zh-cn">
-              推理的迷宫</a>, 威廉姆·庞德斯通</li>
-        </ul>
-        <h2>公开课 (旁听)</h2>
-        <ul>
-          <li><a href="http://v.163.com/special/justice/">
-              公正-该如何做是好？</a>, 哈佛大学</li>
-        </ul>
-      </section>
-    </article>
-
-    <!-- health -->
-    <article id="health">
-      <h1>健康</h1>
-      <section>
-        <h2>心理健康</h2>
-        <ul>
-          <h3>资格认证</h3>
-          <a href="images/images-origin/mental-health-first-aider.png"">
-                <img src=" images/images-350w/mental-health-first-aider.jpg">
-          </a>
-          <li><a href="https://www.udemy.com/certificate/UC-e6d9c830-014c-4294-bd19-6a31203d725e/">
-              Bullies At Work</a>, Udemy</li>
-          <li><a href="http://coursera.org/verify/EZZDP9MDJEVM">
-              Everyday Parenting: The ABCs of Child Rearing</a>, Yale University</li>
-          <li><a href="https://coursera.org/share/e4c8da4421cc3acc5afabfd54d9e359f">
-              The Social Context of Mental Health and Illness</a>, University of Toronto</li>
-        </ul>
-        <ul>
-          <h3>阅读列表</h3>
-          <li><a href="https://book.douban.com/subject/26917416/">
-              Breaking Negative Thinking Patterns</a>, Gitta Jacob</li>
-          <li><a href="https://book.douban.com/subject/4644865/">
-              Oxford Handbook of Chinese Psychology</a>, Michael Harris Bond</li>
-          <li><a href="https://book.douban.com/subject/1786570/">
-              Reinventing Your Life</a>, Jeffrey E. Young</li>
-          <li><a href="https://book.douban.com/subject/2216703/" lang="zh-cn">
-              伯恩斯新情绪疗法</a>, 伯恩斯</li>
-          <li><a href="https://book.douban.com/subject/23038602/" lang="zh-cn">
-              不要用爱控制我</a>, 帕萃丝·埃文斯</li>
-          <li><a href="https://book.douban.com/subject/1053709/" lang="zh-cn">
-              禅宗与精神分析</a>, 铃木大拙</li>
-          <li><a href="https://book.douban.com/subject/2116916/" lang="zh-cn">
-              动机与人格</a>, 马斯洛</li>
-          <li><a href="https://book.douban.com/subject/1459390/" lang="zh-cn">
-              弗洛姆文集</a>, 弗洛姆</li>
-          <li><a href="https://book.douban.com/subject/26712787/" lang="zh-cn">
-              可爱的诅咒</a>, 雅基·马森</li>
-          <li><a href="https://book.douban.com/subject/1761996/" lang="zh-cn">
-              人性能达的境界</a>, 马斯洛</li>
-          <li><a href="https://book.douban.com/subject/1018543/" lang="zh-cn">
-              语言虐待</a>, 帕雷夏·伊文斯</li>
-          <li><a href="https://book.douban.com/subject/1482317/" lang="zh-cn">
-              自卑与超越</a>, 阿德勒</li>
-        </ul>
-        <h2>公开课 (旁听)</h2>
-        <ul>
-          <li><a href="http://v.163.com/special/positivepsychology/">
-              幸福课</a>，哈佛大学</li>
-        </ul>
-      </section>
-      <section>
-        <h2>健康</h2>
-        <ul>
-          <h3>资格认证</h3>
-          <li><a href="https://coursera.org/share/c46373c1967b260e528dde66fa2b9a94">
-              COVID-19: What You Need to Know</a>, Osmosis</li>
-          <li><a href="https://courses.edx.org/certificates/b5330c0630db464f92315949cd1ee141">
-              HEALTH101x: Understanding the Australian Health Care System</a>
-            , The University of Queensland</li>
-          <li><a href="https://coursera.org/share/a678570c60d6bf918ea2be4c8b0c69af">
-              Understanding Medical Research</a>, Yale University</li>
-        </ul>
-      </section>
-    </article>
-
-    <!-- Domestic Cat -->
-    <article id="domestic-cat">
-      <h1>家猫</h1>
-      <section>
-        <h2 lang="zh-cn">小嘿</h2>
-        <a href="images/images-origin/xiaohei-cat-1.jpg">
-          <img src="images/images-350w/xiaohei-cat-1.jpg">
-        </a>
-        <a href="images/images-origin/xiaohei-cat-2.jpg">
-          <img src="images/images-350w/xiaohei-cat-2.jpg">
-        </a>
-        <table>
-          <tr>
-            <th>生日： </td>
-            <td><time datetime="2015-08-01">2015年八月一日</time></td>
-          </tr>
-          <tr>
-            <th>出生地： </td>
-            <td>中国，深圳</td>
-          </tr>
-          <tr>
-            <th>性别： </td>
-            <td>公</td>
-          </tr>
-          <tr>
-            <th>品种： </td>
-            <td>中华田园猫</td>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <h2>资格认证</h2>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/7SU9DE7XPDFL">
-          <img src="./images/images-350w/cats-and-dogs.jpg"></a>
-      </section>
-      <section>
-        <h2>阅读列表</h2>
-        <ul>
-          <li><a href="https://book.douban.com/subject/6878151/" lang="zh-cn">
-              图解版室内养猫生活指南</a>，玉指三毛</li>
-          <li><a href="https://book.douban.com/subject/1063247/" lang="zh-cn">
-              养猫指南</a>，戴维・泰勒</li>
-        </ul>
-      </section>
-    </article>
-
-    <!-- Business -->
-    <article id="business">
-      <h1>经管</h1>
-      <section>
-        <h2>资格认证</h2>
-        <ul>
-          <li>Accounting Foundations, Lynda</li>
-          <li>Developing Cross-Cultural Intelligence, LinkedIn Learning</li>
-          <li>Diversity, Inclusion, and Belonging for All, LinkedIn Learning</li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/5PZAKWHFP58W">
-              Finance for Non-Financial Professionals</a>, University of California</li>
-          <li>Human Resources Foundations, Lynda</li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/6KCUJQH4YJ38">
-              Managing Employee Performance</a>, University of Minnesota</li>
-          <li>Quality Management Foundations, LinkedIn Learning</li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/LJSTNNLAR2ZV">
-              Recruiting, Hiring, and Onboarding Employees</a>, University of Minnesota</li>
-        </ul>
-      </section>
-      <section>
-        <ul>
+        <section>
+          <h2><a href="https://getswitchpal.com/">SwitchPal</a></h2>
+          <p>
+            旧式空调的智能开关, 可自己调节室内温度。 安装简便，支持手机控制。
+          </p>
+        </section>
+        <section>
           <h2>阅读列表</h2>
-          <li><a href="https://book.douban.com/subject/26608585/" lang="zh-cn">
-              重新定义团队：谷歌如何工作</a>, 拉斯洛·博克</li>
-          <li><a href="https://book.douban.com/subject/1128313/" lang="zh-cn">
-              个人的管理</a>, 彼得·德鲁克</li>
-          <li><a href="https://book.douban.com/subject/1457028/" lang="zh-cn">
-              管理的实践</a>, 彼得·德鲁克</li>
-        </ul>
-      </section>
-    </article>
+          <ul>
+            <li>
+              <a href="https://book.douban.com/subject/1926610/">
+                Foundations of Analog and Digital Electronic Circuits</a
+              >
+              , Anant Agarwal
+            </li>
+          </ul>
+          <h2>公开课 (旁听)</h2>
+          <ul>
+            <li>
+              <a href="http://v.163.com/special/opencourse/circuits.html">
+                电路和电子学</a
+              >，麻省理工学院
+            </li>
+          </ul>
+        </section>
+      </article>
 
-    <!-- Natural Sciences -->
-    <article id="natural-sciences">
-      <h1>自然科学</h1>
-      <section>
-        <ul>
+      <!-- Math and Logic -->
+      <article id="math-and-logic">
+        <h1>数学与逻辑</h1>
+        <section>
           <h2>资格认证</h2>
-          <a href="images/images-origin/dinosaur-paleobiology.jpg">
-            <img src="images/images-350w/dinosaur-paleobiology.jpg">
-          </a>
-        </ul>
-      </section>
-      <section>
-        <ul>
+          <a
+            href="https://www.complexityexplorer.org/courses/104-introduction-to-complexity/certificates/868286466"
+          >
+            <img src="./images/images-350w/introduction-to-complexity.jpg"
+          /></a>
+        </section>
+        <section>
           <h2>阅读列表</h2>
-          <li><a href="https://book.douban.com/subject/2270925/" lang="zh-cn">
-              病者生存</a>, 沙伦·莫勒姆</li>
-          <li><a href="https://book.douban.com/subject/6758932/" lang="zh-cn">
-              超负荷的大脑</a>, Torkel Klingberg</li>
-          <li><a href="https://book.douban.com/subject/25788948/" lang="zh-cn">
-              错不在我</a>, 卡罗尔·塔夫里斯</li>
-          <li><a href="https://book.douban.com/subject/6008029/" lang="zh-cn">
-              解码宇宙: 新信息科学看天地万物</a>, 塞费</li>
-          <li><a href="https://book.douban.com/subject/2143904/" lang="zh-cn">
-              进化心理学</a>, 戴维·巴斯</li>
-        </ul>
-      </section>
-    </article>
+          <ul>
+            <li>
+              <a href="https://book.douban.com/subject/7946089/">
+                Introduction to Logic</a
+              >, Irving M. Copi Late
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/25763679/" lang="zh-cn">
+                不确定世界的理性选择</a
+              >, 雷德·海斯蒂
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1500045/" lang="zh-cn">
+                猜想与反驳</a
+              >, 卡尔·波普尔
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/10732575/" lang="zh-cn">
+                概率的哲学理论</a
+              >, 吉利斯
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1599035/" lang="zh-cn">
+                简捷启发式</a
+              >, 哥德·吉戈伦尔
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/3349509/" lang="zh-cn">
+                科学发现的逻辑</a
+              >, 卡尔·波普尔
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/5399343/" lang="zh-cn">
+                论证是一门学问</a
+              >, 安东尼 韦斯顿
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1484425/" lang="zh-cn">
+                囚徒的困境</a
+              >, 威廉·庞德斯通
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1001737/" lang="zh-cn">
+                失败的逻辑</a
+              >, 迪特里希.德尔纳
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1049136/" lang="zh-cn">
+                数学：确定性的丧失</a
+              >, M·克莱因
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/10750155/" lang="zh-cn">
+                数学之美</a
+              >, 吴军
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1400030/" lang="zh-cn">
+                推理的迷宫</a
+              >, 威廉姆·庞德斯通
+            </li>
+          </ul>
+          <h2>公开课 (旁听)</h2>
+          <ul>
+            <li>
+              <a href="http://v.163.com/special/justice/">
+                公正-该如何做是好？</a
+              >, 哈佛大学
+            </li>
+          </ul>
+        </section>
+      </article>
 
-    <!-- Social Sciences -->
-    <article id="social-sciences">
-      <h1>社会科学</h1>
-      <section>
-        <ul>
+      <!-- health -->
+      <article id="health">
+        <h1>健康</h1>
+        <section>
+          <h2>心理健康</h2>
+          <ul>
+            <h3>资格认证</h3>
+            <a href="images/images-origin/mental-health-first-aider.png">
+              <img src=" images/images-350w/mental-health-first-aider.jpg" />
+            </a>
+            <li>
+              <a
+                href="https://www.udemy.com/certificate/UC-e6d9c830-014c-4294-bd19-6a31203d725e/"
+              >
+                Bullies At Work</a
+              >, Udemy
+            </li>
+            <li>
+              <a href="http://coursera.org/verify/EZZDP9MDJEVM">
+                Everyday Parenting: The ABCs of Child Rearing</a
+              >, Yale University
+            </li>
+            <li>
+              <a
+                href="https://coursera.org/share/e4c8da4421cc3acc5afabfd54d9e359f"
+              >
+                The Social Context of Mental Health and Illness</a
+              >, University of Toronto
+            </li>
+          </ul>
+          <ul>
+            <h3>阅读列表</h3>
+            <li>
+              <a href="https://book.douban.com/subject/26917416/">
+                Breaking Negative Thinking Patterns</a
+              >, Gitta Jacob
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/4644865/">
+                Oxford Handbook of Chinese Psychology</a
+              >, Michael Harris Bond
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1786570/">
+                Reinventing Your Life</a
+              >, Jeffrey E. Young
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/2216703/" lang="zh-cn">
+                伯恩斯新情绪疗法</a
+              >, 伯恩斯
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/23038602/" lang="zh-cn">
+                不要用爱控制我</a
+              >, 帕萃丝·埃文斯
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1053709/" lang="zh-cn">
+                禅宗与精神分析</a
+              >, 铃木大拙
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/2116916/" lang="zh-cn">
+                动机与人格</a
+              >, 马斯洛
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1459390/" lang="zh-cn">
+                弗洛姆文集</a
+              >, 弗洛姆
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/26712787/" lang="zh-cn">
+                可爱的诅咒</a
+              >, 雅基·马森
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1761996/" lang="zh-cn">
+                人性能达的境界</a
+              >, 马斯洛
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1018543/" lang="zh-cn">
+                语言虐待</a
+              >, 帕雷夏·伊文斯
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1482317/" lang="zh-cn">
+                自卑与超越</a
+              >, 阿德勒
+            </li>
+          </ul>
+          <h2>公开课 (旁听)</h2>
+          <ul>
+            <li>
+              <a href="http://v.163.com/special/positivepsychology/"> 幸福课</a
+              >，哈佛大学
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>健康</h2>
+          <ul>
+            <h3>资格认证</h3>
+            <li>
+              <a
+                href="https://coursera.org/share/c46373c1967b260e528dde66fa2b9a94"
+              >
+                COVID-19: What You Need to Know</a
+              >, Osmosis
+            </li>
+            <li>
+              <a
+                href="https://courses.edx.org/certificates/b5330c0630db464f92315949cd1ee141"
+              >
+                HEALTH101x: Understanding the Australian Health Care System</a
+              >
+              , The University of Queensland
+            </li>
+            <li>
+              <a
+                href="https://coursera.org/share/a678570c60d6bf918ea2be4c8b0c69af"
+              >
+                Understanding Medical Research</a
+              >, Yale University
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Domestic Cat -->
+      <article id="domestic-cat">
+        <h1>家猫</h1>
+        <section>
+          <h2 lang="zh-cn">小嘿</h2>
+          <a href="images/images-origin/xiaohei-cat-1.jpg">
+            <img src="images/images-350w/xiaohei-cat-1.jpg" />
+          </a>
+          <a href="images/images-origin/xiaohei-cat-2.jpg">
+            <img src="images/images-350w/xiaohei-cat-2.jpg" />
+          </a>
+          <table>
+            <tr>
+              <th>生日：</th>
+              <td><time datetime="2015-08-01">2015年八月一日</time></td>
+            </tr>
+            <tr>
+              <th>出生地：</th>
+              <td>中国，深圳</td>
+            </tr>
+            <tr>
+              <th>性别：</th>
+              <td>公</td>
+            </tr>
+            <tr>
+              <th>品种：</th>
+              <td>中华田园猫</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>资格认证</h2>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/7SU9DE7XPDFL"
+          >
+            <img src="./images/images-350w/cats-and-dogs.jpg"
+          /></a>
+        </section>
+        <section>
+          <h2>阅读列表</h2>
+          <ul>
+            <li>
+              <a href="https://book.douban.com/subject/6878151/" lang="zh-cn">
+                图解版室内养猫生活指南</a
+              >，玉指三毛
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1063247/" lang="zh-cn">
+                养猫指南</a
+              >，戴维・泰勒
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Business -->
+      <article id="business">
+        <h1>经管</h1>
+        <section>
           <h2>资格认证</h2>
           <ul>
-            <li><a href="https://www.futurelearn.com/certificates/fpexo6x">
-                Disinformation, Misinformation, and Fake News Teach-Out</a>
-              , University of Michigen</li>
-            <li><a href="http://coursera.org/verify/XUY9UUXPMPHB">
-                What is Corruption: Anti-Corruption and Compliance</a>
-              , University of Pennsylvania</li>
-            <li><a href="https://www.coursera.org/account/accomplishments/certificate/EQPU8QNDKH5F">
-                Citizenship and the Rule of Law</a>, University of London</li>
+            <li>Accounting Foundations, Lynda</li>
+            <li>Developing Cross-Cultural Intelligence, LinkedIn Learning</li>
+            <li>
+              Diversity, Inclusion, and Belonging for All, LinkedIn Learning
+            </li>
+            <li>
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/5PZAKWHFP58W"
+              >
+                Finance for Non-Financial Professionals</a
+              >, University of California
+            </li>
+            <li>Human Resources Foundations, Lynda</li>
+            <li>
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/6KCUJQH4YJ38"
+              >
+                Managing Employee Performance</a
+              >, University of Minnesota
+            </li>
+            <li>Quality Management Foundations, LinkedIn Learning</li>
+            <li>
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/LJSTNNLAR2ZV"
+              >
+                Recruiting, Hiring, and Onboarding Employees</a
+              >, University of Minnesota
+            </li>
           </ul>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <h2>阅读列表</h2>
-          <li><a href="https://book.douban.com/subject/1909527/" lang="zh-cn">
-              变化中的中国人</a>, E.A.罗斯</li>
-          <li><a href="https://book.douban.com/subject/3610090/" lang="zh-cn">
-              第二次世界大战战史</a>, 李德·哈特</li>
-          <li><a href="https://book.douban.com/subject/20424526/" lang="zh-cn">
-              邓小平时代</a>, 傅高义</li>
-          <li><a href="https://book.douban.com/subject/22806583/" lang="zh-cn">
-              国家的常识</a>, 迈克尔·罗斯金</li>
-          <li><a href="https://book.douban.com/subject/24754570/" lang="zh-cn">
-              看得见的正义</a>, 陈瑞华</li>
-          <li><a href="https://book.douban.com/subject/25985021/" lang="zh-cn">
-              人类简史</a>, 尤瓦尔·赫拉利</li>
-          <li><a href="https://book.douban.com/subject/4218731/" lang="zh-cn">
-              失落的一代</a>, 潘鸣啸</li>
-          <li><a href="https://book.douban.com/subject/1012611/" lang="zh-cn">
-              乌合之众</a>, 勒庞</li>
-          <li><a href="https://book.douban.com/subject/2342942/" lang="zh-cn">
-              中国人的气质</a>, 明恩溥</li>
-          <li><a href="https://book.douban.com/subject/1882376/" lang="zh-cn">
-              中国乡村生活</a>, 明恩溥</li>
-        </ul>
-      </section>
-    </article>
+        </section>
+        <section>
+          <ul>
+            <h2>阅读列表</h2>
+            <li>
+              <a href="https://book.douban.com/subject/26608585/" lang="zh-cn">
+                重新定义团队：谷歌如何工作</a
+              >, 拉斯洛·博克
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1128313/" lang="zh-cn">
+                个人的管理</a
+              >, 彼得·德鲁克
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1457028/" lang="zh-cn">
+                管理的实践</a
+              >, 彼得·德鲁克
+            </li>
+          </ul>
+        </section>
+      </article>
 
-    <article id="disqus">
-      <h1>Disqus</h1>
-      <div id="disqus_thread"></div>
-      <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
+      <!-- Natural Sciences -->
+      <article id="natural-sciences">
+        <h1>自然科学</h1>
+        <section>
+          <ul>
+            <h2>资格认证</h2>
+            <a href="images/images-origin/dinosaur-paleobiology.jpg">
+              <img src="images/images-350w/dinosaur-paleobiology.jpg" />
+            </a>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <h2>阅读列表</h2>
+
+            <li>
+              <a href="https://book.douban.com/subject/2270925/" lang="zh-cn">
+                病者生存</a
+              >, 沙伦·莫勒姆
+            </li>
+
+            <li>
+              <a href="https://book.douban.com/subject/6758932/" lang="zh-cn">
+                超负荷的大脑</a
+              >, Torkel Klingberg
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/25788948/" lang="zh-cn">
+                错不在我</a
+              >, 卡罗尔·塔夫里斯
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/6008029/" lang="zh-cn">
+                解码宇宙: 新信息科学看天地万物</a
+              >, 塞费
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/2143904/" lang="zh-cn">
+                进化心理学</a
+              >, 戴维·巴斯
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Social Sciences -->
+      <article id="social-sciences">
+        <h1>社会科学</h1>
+        <section>
+          <ul>
+            <h2>资格认证</h2>
+            <ul>
+              <li>
+                <a href="https://www.futurelearn.com/certificates/fpexo6x">
+                  Disinformation, Misinformation, and Fake News Teach-Out</a
+                >
+                , University of Michigen
+              </li>
+              <li>
+                <a href="http://coursera.org/verify/XUY9UUXPMPHB">
+                  What is Corruption: Anti-Corruption and Compliance</a
+                >
+                , University of Pennsylvania
+              </li>
+              <li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/EQPU8QNDKH5F"
+                >
+                  Citizenship and the Rule of Law</a
+                >, University of London
+              </li>
+            </ul>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <h2>阅读列表</h2>
+            <li>
+              <a href="https://book.douban.com/subject/1909527/" lang="zh-cn">
+                变化中的中国人</a
+              >, E.A.罗斯
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/3610090/" lang="zh-cn">
+                第二次世界大战战史</a
+              >, 李德·哈特
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/20424526/" lang="zh-cn">
+                邓小平时代</a
+              >, 傅高义
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/22806583/" lang="zh-cn">
+                国家的常识</a
+              >, 迈克尔·罗斯金
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/24754570/" lang="zh-cn">
+                看得见的正义</a
+              >, 陈瑞华
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/25985021/" lang="zh-cn">
+                人类简史</a
+              >, 尤瓦尔·赫拉利
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/4218731/" lang="zh-cn">
+                失落的一代</a
+              >, 潘鸣啸
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1012611/" lang="zh-cn">
+                乌合之众</a
+              >, 勒庞
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/2342942/" lang="zh-cn">
+                中国人的气质</a
+              >, 明恩溥
+            </li>
+            <li>
+              <a href="https://book.douban.com/subject/1882376/" lang="zh-cn">
+                中国乡村生活</a
+              >, 明恩溥
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <article id="disqus">
+        <h1>Disqus</h1>
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
         var disqus_config = function () {
         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         */
-        (function () { // DON'T EDIT BELOW THIS LINE
-          var d = document, s = d.createElement('script');
-          s.src = 'https://jackjyq.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-          Disqus.</a></noscript>
-    </article>
-  </main>
-  <!-- footer -->
-  <footer>
-    简体中文 | <a href="./en-AU.html">English</a><br />
-    版权所有 &copy; 2022 <a href="https://github.com/jackjyq/jackjyq.com">姜译群<q>Jack</q></a>. 保留所有权利.
-  </footer>
-</body>
-
+          (function () {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://jackjyq.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+      </article>
+    </main>
+    <!-- footer -->
+    <footer>
+      简体中文 | <a href="./en-AU.html">English</a><br />
+      版权所有 &copy; 2022
+      <a href="https://github.com/jackjyq/jackjyq.com">姜译群<q>Jack</q></a
+      >. 保留所有权利.
+    </footer>
+  </body>
 </html>
