@@ -111,6 +111,9 @@ header {
   margin-bottom: 16px;
   max-width: auto;
 }
+.header-background-avatar-container {
+  height: 296px;
+}
 
 .header-background {
   background-image: url("../images/header/profile-bg-800x200.jpg");
@@ -122,11 +125,15 @@ header {
   padding: 24px;
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
 
 .header-avatar {
   width: 192px;
   height: 192px;
+  position: relative;
+  bottom: 96px;
+  left: 24px;
 }
 
 .contact ul,
